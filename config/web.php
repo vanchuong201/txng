@@ -51,7 +51,34 @@ $config = [
             ],
         ],
         */
+
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'sourcePath' => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'js' => [
+                        'js/jquery-3.2.1.min.js',
+                        'js/popper.min.js'
+                    ]
+                ],
+
+                'yii\bootstrap\BootstrapAsset' => [
+                    'sourcePath' => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'css' => [
+                        'css/bootstrap.min.css',
+                        'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700'
+                    ]
+                ]
+            ],
+        ],
     ],
+
+
+
     'params' => $params,
 ];
 
